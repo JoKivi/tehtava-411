@@ -24,49 +24,53 @@
         <p><strong>Siirry kentästä toiseen tab-näppäimellä</strong></p>
     </div>
 
-    
-    <form>
-        <div class="container row mb-1">
-            <label for="kayttajaID" class="col-sm-2 col-form-label">Käyttäjä ID</label>
-            <div class="col-auto ">
-                <input type="text" class="form-control" placeholder="Syötä ID..." name="kayttajaID"></input>
+    <div class="container">
+        <form>
+
+            <div class="mb-1">
+                <label for="kayttajaID" class="col-xs-4 col-form-label">Käyttäjä ID</label>
+                <div class="col-xs-8">
+                    <input type="text" class="form-control" placeholder="Syötä ID..." name="kayttajaID"></input>
+                </div>
             </div>
-        </div>
 
-        <div class="container row mb-1">
-            <label for="salasana" class="col-sm-2 col-form-label">Salasana</label>
-            <div class="col-auto">
-              <input type="password" class="form-control" id="salasana">
+            <div class="mb-1">
+                <label for="salasana" class="col-xs-4 col-form-label">Salasana</label>
+                <div class="col-xs-8">
+                <input type="password" class="form-control" id="salasana">
+                </div>
             </div>
-        </div>
 
-        <div class="container row mb-1">
-            <label for="nimi" class="col-sm-2 col-form-label">Nimi</label>
-            <div class="col-auto">
-              <input type="text" class="form-control" id="nimi">
+            <div class="mb-1">
+                <label for="nimi" class="col-xs-4 col-form-label">Nimi</label>
+                <div class="col-xs-8">
+                    <input type="text" class="form-control" placeholder="Syötä nimi..." name="nimi"></input>
+                </div>
             </div>
-        </div>
 
-        <div class="container row mb-1">
-            <label for="osoite" class="col-sm-2 col-form-label">Osoite</label>
-            <div class="col-auto">
-              <input type="text" class="form-control" id="osoite">
+            <div class="mb-1">
+                <label for="osoite" class="col-xs-4 col-form-label">Osoite</label>
+                <div class="col-xs-8 ">
+                    <input type="text" class="form-control" placeholder="Syötä osoite..." name="osoite"></input>
+                </div>
             </div>
-        </div>
 
-        <div class="container row mb-1">
-            <label for="maa" class="col-sm-2 col-form-label">Maa</label>
-            <div class="col-auto">
-              <input type="" class="form-control" id="maa">
+            <div class="mb-1">
+                <label for="maa" class="col-xs-4 col-form-label">Maa</label>
+                <div class="dropdown">
+                    <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                        Valitse maa
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                </div>
             </div>
-        </div>
 
-
-
-        
-
-
-    </form>
+        </form>
+    </div>
     
     <script src="main.js"></script>
 

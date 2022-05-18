@@ -2,16 +2,6 @@
     overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
-    * {
-        font-size: small;
-         text-align: center;
-    }
-    .container {
-        align-content: center;
-    }
-}
-
 body {
     font-family: Verdana, Tahoma, sans-serif;
     font-size: medium;
@@ -35,11 +25,3 @@ header {
     text-align: center;
 }
 
-#otsikko {
-    text-align: center;
-    color: white;
-    background-color: rgb(190, 0, 0);
-    padding-top: 30px;
-    padding-bottom: 3px;
-    border-bottom: 5px rgb(255, 108, 97) solid;
-}
