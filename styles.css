@@ -16,12 +16,4 @@ header {
     border-bottom: coral 3px solid;
 }
 
-.container {
-    justify-content: center;
-}
-
-#ohjeistus {
-    padding-top: 3%;
-    text-align: center;
-}
-
+/* select { width: 400px; height: 30px; text-align-last:center; } */

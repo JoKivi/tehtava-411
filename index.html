@@ -20,54 +20,73 @@
         </div>
     </header>
 
-    <div class="container" id="ohjeistus">
+    <div class="container p-4" id="ohjeistus">
         <p><strong>Siirry kentästä toiseen tab-näppäimellä</strong></p>
     </div>
 
     <div class="container">
         <form>
 
-            <div class="mb-1">
-                <label for="kayttajaID" class="col-xs-4 col-form-label">Käyttäjä ID</label>
-                <div class="col-xs-8">
+            <div class="row mb-1 ">
+                <label for="kayttajaID" class="col-sm-3 col-form-label text-end">Käyttäjä ID</label>
+                <div class="col-sm-9">
                     <input type="text" class="form-control" placeholder="Syötä ID..." name="kayttajaID"></input>
                 </div>
             </div>
 
-            <div class="mb-1">
-                <label for="salasana" class="col-xs-4 col-form-label">Salasana</label>
-                <div class="col-xs-8">
-                <input type="password" class="form-control" id="salasana">
+            <div class="row mb-1">
+                <label for="salasana" class="col-sm-3 col-form-label text-end">Salasana</label>
+                <div class="col-sm-9">
+                <input type="password" class="form-control" placeholder="xxxxxxxx" id="salasana">
                 </div>
             </div>
 
-            <div class="mb-1">
-                <label for="nimi" class="col-xs-4 col-form-label">Nimi</label>
-                <div class="col-xs-8">
+            <div class="row mb-1">
+                <label for="nimi" class="col-sm-3 col-form-label text-end">Nimi</label>
+                <div class="col-sm-9">
                     <input type="text" class="form-control" placeholder="Syötä nimi..." name="nimi"></input>
                 </div>
             </div>
 
-            <div class="mb-1">
-                <label for="osoite" class="col-xs-4 col-form-label">Osoite</label>
-                <div class="col-xs-8 ">
+            <div class="row mb-1">
+                <label for="osoite" class="col-sm-3 col-form-label text-end">Osoite</label>
+                <div class="col-sm-9 ">
                     <input type="text" class="form-control" placeholder="Syötä osoite..." name="osoite"></input>
                 </div>
             </div>
 
-            <div class="mb-1">
-                <label for="maa" class="col-xs-4 col-form-label">Maa</label>
-                <div class="dropdown">
-                    <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                        Valitse maa
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
+            <div class="row mb-1 form-group">
+                <label for="maa" class="col-sm-3 col-form-label text-end">Maa</label>
+                <div class="col-sm-9 ">
+                    <select class="form-control" name="maa" id="maa">
+                        <option value="FIN">Suomi</option>
+                        <option value="SWE">Ruotsi</option>
+                        <option value="ENG">Englanti</option>
+                    </select>
                 </div>
             </div>
+
+            <div class="row mb-1">
+                <label for="postinumero" class="col-sm-3 col-form-label text-end">Postinumero</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" placeholder="Syötä postinumero..." id="postinumero">
+                </div>
+            </div>
+
+            <div class="row mb-1">
+                <label for="email" class="col-sm-3 col-form-label text-end">Sähköposti</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" placeholder="Anna sähköposti" id="email">
+                </div>
+            </div>
+
+            <div class="row mb-1">
+                <label for="viesti" class="col-sm-3 col-form-label text-end">Viesti</label>
+                <div class="col-sm-9">
+                    <textarea class="form-control" name="viesti" placeholder="viestisi" id="viesti" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
 
         </form>
     </div>
