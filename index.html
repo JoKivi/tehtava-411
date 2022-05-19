@@ -30,7 +30,7 @@
             <div class="row mb-1 ">
                 <label for="kayttajaID" class="col-sm-3 col-form-label text-end">Käyttäjä ID</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control" placeholder="Syötä ID..." name="kayttajaID"></input>
+                    <input type="text" class="form-control" placeholder="Syötä ID..." id="kayttajaID"></input>
                 </div>
             </div>
 
@@ -44,14 +44,14 @@
             <div class="row mb-1">
                 <label for="nimi" class="col-sm-3 col-form-label text-end">Nimi</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control" placeholder="Syötä nimi..." name="nimi"></input>
+                    <input type="text" class="form-control" placeholder="Syötä nimi..." id="nimi"></input>
                 </div>
             </div>
 
             <div class="row mb-1">
                 <label for="osoite" class="col-sm-3 col-form-label text-end">Osoite</label>
                 <div class="col-sm-9 ">
-                    <input type="text" class="form-control" placeholder="Syötä osoite..." name="osoite"></input>
+                    <input type="text" class="form-control" placeholder="Syötä osoite..." id="osoite"></input>
                 </div>
             </div>
 
@@ -85,6 +85,21 @@
                 <div class="col-sm-9">
                     <textarea class="form-control" name="viesti" placeholder="viestisi" id="viesti" cols="30" rows="10"></textarea>
                 </div>
+            </div>
+
+            <div class="row mb-1">
+                <div class="col-sm-3"></div>
+                
+                <div class=col-sm-2>
+                <input class="btn btn-danger" type="submit" id="send" value="Lähetä">
+                </div>
+
+                <!-- <div class="col-sm-3"></div> -->
+
+                <div class="col-sm-3">
+                    <input class="btn btn-danger" type="reset" id="reset" value="Tyhjennä">
+                </div>
+
             </div>
 
 
