@@ -32,7 +32,7 @@
             <div class="row mb-2">
                 <label for="kayttajaID" class="col-sm-3 col-form-label text-end">Käyttäjä ID</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control" placeholder="Syötä ID..." id="kayttajaID" required></input>
+                    <input type="text" class="form-control" placeholder="Syötä ID. Täytyy sisältää vähintään 6 merkkiä." id="kayttajaID" pattern=".{6,}" required></input>
                 </div>
             </div>
 
@@ -71,14 +71,14 @@
             <div class="row mb-2">
                 <label for="postinumero" class="col-sm-3 col-form-label text-end">Postinumero</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control" placeholder="Syötä postinumero..." id="postinumero" required>
+                    <input type="number" class="form-control" placeholder="Syötä postinumero..." id="postinumero" pattern="[0-9]{5}"  required>
                 </div>
             </div>
 
             <div class="row ">
                 <label for="email" class="col-sm-3 col-form-label text-end">Sähköposti</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control" placeholder="Anna sähköposti" id="email" required>
+                    <input type="email" class="form-control" placeholder="Anna sähköposti" id="email" required>
                 </div>
             </div>
 
@@ -97,12 +97,12 @@
             <div class="row ">
                 <label for="kieli" class="col-sm-3 col-form-label text-end">Kieli</label>
                 <div class="col-sm-9 pt-sm-2">
-                    <input class="form-check-input" type="checkbox" name="kieli" value="1" id="kieliSuomi" >
+                    <input class="form-check-input" type="checkbox" name="kieli" value="1" id="kieliSuomi">
                     <label for="kieliSuomi" class="form-check-label form-check-inline">Suomi</label>
                     <input class="form-check-input" type="checkbox" name="kieli" value="2" id="kieliSve">
-                    <label for="kieliSve" class="form-check-label">Sverige</label>
+                    <label for="kieliSve" class="form-check-label form-check-inline">Svenska</label>
                     <input class="form-check-input" type="checkbox" name="kieli" value="3" id="kieliEng">
-                    <label for="kieliEng" class="form-check-label">English</label>
+                    <label for="kieliEng" class="form-check-label form-check-inline">English</label>
                 </div>
             </div>
 

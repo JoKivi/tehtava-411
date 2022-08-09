@@ -1,19 +1,18 @@
 const idTunnus = document.querySelector("#kayttajaID").value;
-const sukupuolet = document.querySelectorAll("input[name='sukupuoli']");
 const kielet = document.querySelectorAll("input[name='kieli']");
 
-let valittuSukupuoli;
-for (const sukupuoliValinta of sukupuolet) {
-    if (sukupuoliValinta.checked) {
-        valittuSukupuoli = sukupuoliValinta.value;
-        break;
-    }
+document.getElementById("kayttajaID").addEventListener("invalid", idSisaltaa);
+document.getElementById("send").addEventListener("click", radioValittu)
+
+function idSisaltaa() {
+    console.log("Täytyy sisältää vähintään 6 merkkiä");
+    alert ("ID:n täytyy sisältää vähintään 6 merkkiä");
 }
 
-let valittuKieli;
-for (const kieliValinta of kielet) {
-    if (kieliValinta.checked) {
-        valittuKieli = kieliValinta.value;
-        break;
+function radioValittu() {
+    element.preventDefault();
+    var radioValittu = querySelectorAll("input[name='sukupuoli']:checked");
+    if (radioValittu = null) {
+        alert ("Valitse sukupuoli")
     }
 }
