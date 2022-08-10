@@ -10,12 +10,12 @@ function idSisaltaa() {
 }
 
 function radioValittu() {
-    // element.preventDefault();
-    var mies = document.getElementById("sukupuoliMies").Checked;
-    var nainen = document.getElementById("sukupuoliNainen").Checked;
-    var muu = document.getElementById("sukupuoliMuu").Checked;
+    event.preventDefault();
+    var mies = document.getElementById("sukupuoliMies").checked;
+    var nainen = document.getElementById("sukupuoliNainen").checked;
+    var muu = document.getElementById("sukupuoliMuu").checked;
 
-    if (mies === false, nainen === false, muu === false) {
+    if (mies === false) {
         alert = ("Valitse sukupuoli");
     }
  }
