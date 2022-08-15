@@ -3,6 +3,7 @@ const kielet = document.querySelectorAll("input[name='kieli']");
 
 document.getElementById("kayttajaID").addEventListener("invalid", idSisaltaa);
 document.getElementById("send").addEventListener("click", radioValittu);
+document.getElementById("send").addEventListener("click", kieliValittu);
 
 function idSisaltaa() {
     console.log("Täytyy sisältää vähintään 6 merkkiä");
@@ -15,7 +16,18 @@ function radioValittu() {
     var nainen = document.getElementById("sukupuoliNainen").checked;
     var muu = document.getElementById("sukupuoliMuu").checked;
 
-    if (mies === false) {
-        alert = ("Valitse sukupuoli");
+    if (!mies && !nainen && !muu) {
+        alert("Valitse sukupuoli");
+    }
+ }
+
+ function kieliValittu() {
+    event.preventDefault();
+    var suomi = document.getElementById("kieliSuomi").checked;
+    var svenska = document.getElementById("kieliSve").checked;
+    var englanti = document.getElementById("kieliEng").checked;
+
+    if (!suomi && !svenska && !englanti) {
+        alert("Valitse kieli");
     }
  }
